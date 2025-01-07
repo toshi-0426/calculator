@@ -24,8 +24,19 @@ export default function Calculator(){
     }
 
     function calculate() {
+      // if = was pressed with no input, then nothing happen
+      if (!input) {
+        return;
+      }
+      const lastChar = input.slice(-1);
+      const operators = ['+', '-', '*', '/', '.'];
+      if (operators.includes(lastChar)) {
+        return;
+      }
+
       try {
         const result = math.evaluate(input);
+      
         if (!isFinite(result)){
           setHasError(true)
           setInput("Error")
