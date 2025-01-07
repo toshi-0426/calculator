@@ -1,5 +1,8 @@
-# React Simple Calculator
-A simple calculator built with React and Tailwind CSS for a learning purpose.
+
+<div align="center">
+  <img src="public/calculator.png" alt="Calculator Icon" width="40" />
+  # React Simple Calculator
+</div>
 
 ## Features 
 - Basic 4 operations (+, -, *, /)
